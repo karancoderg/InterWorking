@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capsule Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <h2>✨ Capsule Page ✨</h2>
+    
+    <button class="button" onclick="toggleCreateOptions()">Create</button>
+    <button class="button button-secondary">See Capsules</button>
+
+    <div id="createOptions" class="options">
+        <button class="option" onclick="createCapsule('personal')">🧑‍🎨 Personal Capsule</button>
+        <button class="option" onclick="createCapsule('community')">🌍 Community Capsule</button>
+    </div>
+
+    <!-- <script>
+        function toggleCreateOptions() {
+            let options = document.getElementById('createOptions');
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+            options.style.animation = 'fadeIn 0.5s ease-in-out';
+        }
+
+        function createCapsule(type) {
+            alert('✨ Creating a ${type} capsule... 🚀');
+        }
+    </script> -->
+
+    <script>
+        function toggleCreateOptions() {
+            let options = document.getElementById('createOptions');
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+            options.style.animation = 'fadeIn 0.5s ease-in-out';
+        }
+    
+        function createCapsule(type) {
+            if (type === 'personal') {
+                window.location.href = "/capsule_see_encrypted/capsule see encrypted/frontend/upload.html";
+  // Redirect to see.html
+            } else if (type === 'community') {
+                window.location.href = 'community_capsule.html';  // Keep or change as needed
+            }
+        }
+    </script>
+    
+
+</body>
+</html>
+
+<link rel="stylesheet" href="styles.css">

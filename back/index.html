@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Register</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h2 class="logo">Logo</h2>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <button class="buttn-login" id="header-login-button">Login</button>
+    </nav>
+  </header>
+
+  <!-- Login Page -->
+  <div class="wrapper" id="login-page">
+    <h2 class="login-text">Login</h2>
+    <div class="box-form login">
+      <form id="login-form">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" id="login-email" required >
+          <label for="login-email">Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" id="login-password" required >
+          <label for="login-password">Password</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox">Remember me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="register">
+          <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+        </div>
+        <div>
+          <button id="google-login" class="btn">Login with Google</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Register Page -->
+  <div class="wrapper" id="register-page" style="display: none;">
+    <h2 class="login-text">Register</h2>
+    <div class="box-form register">
+      <form id="register-form">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person"></ion-icon></span>
+          <input type="text" id="register-name" required >
+          <label for="register-name">Full Name</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" id="register-email" required >
+          <label for="register-email">Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" id="register-password" required >
+          <label for="register-password">Password</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" id="confirm-password" required >
+          <label for="confirm-password">Confirm Password</label>
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <div class="register">
+          <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </div>
+        <div>
+          <button id="google-register" class="btn">Register with Google</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

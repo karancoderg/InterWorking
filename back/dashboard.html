@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capsule Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <h2>✨ Capsule Page ✨</h2>
+    
+    <button class="button" onclick="toggleCreateOptions()">Create</button>
+    <button class="button button-secondary" onclick="toggleSeeOptions()">See Capsules</button>
+
+    <!-- Create Capsule Options -->
+    <div id="createOptions" class="options" style="display: none;">
+        <button class="option" onclick="createCapsule('personal')">🧑‍🎨 Personal Capsule</button>
+        <button class="option" onclick="createCapsule('community')">🌍 Community Capsule</button>
+    </div>
+
+    <!-- See Capsules Options -->
+    <div id="seeOptions" class="options" style="display: none;">
+        <button class="option" onclick="seeCapsules('personal')">🧑‍🎨 See Personal Capsules</button>
+        <button class="option" onclick="seeCapsules('community')">🌍 See Community Capsules</button>
+    </div>
+
+    <script>
+        function toggleCreateOptions() {
+            let options = document.getElementById('createOptions');
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+            options.style.animation = 'fadeIn 0.5s ease-in-out';
+        }
+
+        function toggleSeeOptions() {
+            let options = document.getElementById('seeOptions');
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+            options.style.animation = 'fadeIn 0.5s ease-in-out';
+        }
+
+        function createCapsule(type) {
+            alert(`✨ Creating a ${type} capsule... 🚀`);
+            if (type === 'personal') {
+                window.location.href = '../capsule_see_encrypted/capsule_see_encrypted/frontend/upload.html';  
+            } else if (type === 'community') {
+                window.location.href = 'community_capsule.html';  
+            }
+        }
+
+        function seeCapsules(type) {
+            alert(`🔍 Viewing ${type} capsules...`);
+            if (type === 'personal') {
+                window.location.href = '../capsule_see_encrypted/capsule_see_encrypted/frontend/see.html';
+            } else if (type === 'community') {
+                window.location.href = '/capsule_see_incrypted/frontend/see_community.html';
+            }
+        }
+    </script>
+
+</body>
+</html>

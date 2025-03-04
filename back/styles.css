@@ -1,0 +1,116 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    background: url('https://i.postimg.cc/DZFNvFFW/ai.jpg') no-repeat center center fixed; /* Replace with your image URL */
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Remove the container */
+.container {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Header */
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.8); /* Glow effect */
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.button {
+    background: rgba(255, 126, 95, 0.3); /* Semi-transparent */
+    color: white;
+    padding: 14px 32px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.button:hover {
+    background: rgba(255, 126, 95, 0.6);
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Secondary Button */
+.button-secondary {
+    background: rgba(0, 198, 255, 0.3);
+    box-shadow: 0px 5px 15px rgba(0, 198, 255, 0.4);
+}
+
+.button-secondary:hover {
+    background: rgba(0, 198, 255, 0.6);
+    box-shadow: 0px 8px 20px rgba(0, 198, 255, 0.6);
+}
+
+/* Create Options */
+.options {
+    display: none;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.option {
+    background: rgba(47, 128, 237, 0.3);
+    color: white;
+    padding: 12px 25px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.4);
+}
+
+.option:hover {
+    background: rgba(47, 128, 237, 0.6);
+    transform: translateY(-4px);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .button {
+        width: 100%;
+    }
+}

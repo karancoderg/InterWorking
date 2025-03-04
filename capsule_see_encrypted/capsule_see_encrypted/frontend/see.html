@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Your Capsules</title>
+    <script src="see.js" defer></script> <!-- ✅ Link JavaScript -->
+    <link rel="stylesheet" href="see.css">
+</head>
+<body>
+    <h1>🕒 Your Time Capsules</h1>
+
+    <!-- ✅ Always Show "Create New Capsules" -->
+    <div id="createCapsule">
+        <img src="https://img.freepik.com/premium-vector/create-memories-svg_847298-2255.jpg?w=2000" alt="Create New Capsules">
+        <p>Want to create a new capsule?</p>
+        <a href="upload.html">➕ Create New Capsules</a>
+    </div>
+
+    <!-- Capsule Table -->
+    <div id="capsuleTableContainer">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Created At</th>
+                    <th>Unlock Time</th>
+                    <th>Time Remaining</th>
+                </tr>
+            </thead>
+            <tbody id="capsuleTable"></tbody>
+        </table>
+    </div>
+</body>
+</html>
